@@ -18,12 +18,5 @@ My portfolio highlights the projects I’ve worked on. You can check out the pro
 
 ## Blog
 I write about [topics of interest], share tutorials, and provide insights on [related subjects]. Visit the [Blog] section to read more.
-
 ## Contact
-Feel free to reach out to me through the [Contact](https://yourusername.github.io/contact) form on my website or email me directly at `your.email@example.com`.
-
-
-## Acknowledgements
-- [Jekyll](https://jekyllrb.com/) - The static site generator used for this website
-- [Bootstrap](https://getbootstrap.com/) - For the responsive design framework
-
+Feel free to reach out to me through the [Contact](https://yourusername.github.io/contact) form on my website or email me directly at 'abarua4@lsu.edu`
