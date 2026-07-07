@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arnob Barua — Computational Geoscience</title>
+  <meta name="description" content="Arnob Barua — Graduate researcher in Civil & Environmental Engineering at LSU. Computational modeling of geologic CO2 sequestration and multiphase flow in porous media." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arnob Barua — Computational Geoscience" />
+  <meta property="og:description" content="Modeling geologic CO2 sequestration and multiphase flow in porous media." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">Arnob&nbsp;Barua</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="eyebrow">Computational Geoscience</p>
+        <h1>Arnob Barua</h1>
+        <p class="lede">
+          Graduate researcher in Civil &amp; Environmental Engineering at
+          <strong>Louisiana State University</strong>, developing finite-element
+          methods for <strong>geologic CO<sub>2</sub> sequestration</strong> and
+          multiphase flow in porous media.
+        </p>
+        <div class="hero-links">
+          <a class="btn primary" href="#research">View research</a>
+          <a class="btn" href="assets/cv.pdf">Download CV</a>
+        </div>
+        <div class="social">
+          <a href="https://github.com/abarua-ce" aria-label="GitHub" target="_blank" rel="noopener">GitHub</a>
+          <span>·</span>
+          <!-- TODO: replace # with your Google Scholar URL -->
+          <a href="#" aria-label="Google Scholar" target="_blank" rel="noopener">Scholar</a>
+          <span>·</span>
+          <!-- TODO: replace # with your LinkedIn URL -->
+          <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+          <span>·</span>
+          <!-- TODO: replace # with your ORCID URL -->
+          <a href="#" aria-label="ORCID" target="_blank" rel="noopener">ORCID</a>
+          <span>·</span>
+          <a href="mailto:abarua4@lsu.edu">Email</a>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <!-- Drop a square headshot at assets/portrait.jpg to replace the monogram -->
+        <div class="portrait-frame" aria-hidden="true">
+          <img src="assets/portrait.jpg" alt="" onerror="this.style.display='none';this.parentNode.classList.add('monogram');this.parentNode.setAttribute('data-mono','AB');" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section wrap">
+      <h2>About</h2>
+      <div class="two-col">
+        <div>
+          <p>
+            I build numerical models of how CO<sub>2</sub> moves, dissolves, and is
+            trapped deep underground — physics that matters for safe, long-term
+            carbon storage. My work sits at the intersection of
+            <strong>subsurface flow physics</strong>,
+            <strong>finite-element methods</strong>, and
+            <strong>high-performance scientific computing</strong>.
+          </p>
+          <p>
+            Most of my day-to-day is spent inside
+            <a href="https://github.com/erdc/proteus" target="_blank" rel="noopener">Proteus</a>,
+            an open-source toolkit for computational methods, where I develop and
+            verify a fully-coupled compositional two-phase (CO<sub>2</sub>–brine)
+            flow solver against community benchmarks such as the
+            <strong>FluidFlower</strong> international comparison study.
+          </p>
+        </div>
+        <aside class="facts">
+          <h3>At a glance</h3>
+          <dl>
+            <dt>Field</dt>
+            <dd>Computational geoscience / subsurface flow</dd>
+            <dt>Affiliation</dt>
+            <dd>Civil &amp; Environmental Engineering, LSU</dd>
+            <dt>Methods</dt>
+            <dd>Finite elements, stabilized transport, multiphase flow</dd>
+            <dt>Tooling</dt>
+            <dd>C++ · Cython · Python · MPI · PETSc</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section alt">
+      <div class="wrap">
+        <h2>Research</h2>
+        <p class="section-lede">
+          My research develops and verifies numerical methods for
+          multiphase, multicomponent flow in geologic formations, with a focus on
+          the accuracy and robustness needed for field-scale CO<sub>2</sub> storage.
+        </p>
+        <div class="cards">
+          <article class="card">
+            <h3>Compositional CO<sub>2</sub>–brine flow</h3>
+            <p>
+              A fully-coupled two-component formulation in pressure–overall-composition
+              (<em>p, z</em>) variables with an analytic phase-equilibrium (flash)
+              closure, capturing dissolution and exsolution without ad-hoc kinetics.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Stabilized finite elements</h3>
+            <p>
+              Entropy-viscosity and flux-corrected transport schemes that keep sharp
+              saturation fronts monotone and mass-conservative across strong
+              capillary and permeability discontinuities.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Benchmark verification</h3>
+            <p>
+              Method-of-manufactured-solution and analytical checks
+              (McWhorter–Sunada), plus validation against the FluidFlower
+              laboratory-scale international benchmark.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section wrap">
+      <h2>Publications</h2>
+      <p class="section-lede">
+        Journal articles, conference proceedings, and preprints.
+        <!-- Fill in your real entries below and delete this note. -->
+      </p>
+      <ol class="pub-list">
+        <!-- Duplicate a <li> block per publication. -->
+        <li class="pub">
+          <div class="pub-year">2025</div>
+          <div class="pub-body">
+            <p class="pub-title">Publication title goes here.</p>
+            <p class="pub-meta">A. Barua, Co-author. <em>Journal / Conference name</em>, vol(issue), pages.</p>
+            <p class="pub-links">
+              <a href="#">DOI</a> · <a href="#">PDF</a> · <a href="#">Code</a>
+            </p>
+          </div>
+        </li>
+        <li class="pub">
+          <div class="pub-year">2024</div>
+          <div class="pub-body">
+            <p class="pub-title">Another publication title.</p>
+            <p class="pub-meta">A. Barua, Co-author. <em>Journal / Conference name</em>.</p>
+            <p class="pub-links">
+              <a href="#">DOI</a> · <a href="#">PDF</a>
+            </p>
+          </div>
+        </li>
+      </ol>
+      <p class="muted">
+        Full list on
+        <!-- TODO: replace # with your Google Scholar URL -->
+        <a href="#" target="_blank" rel="noopener">Google&nbsp;Scholar</a>.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card project">
+            <h3>Compositional CO<sub>2</sub> model in Proteus</h3>
+            <p>
+              A fully-coupled two-component CO<sub>2</sub>–brine solver with analytic
+              flash, entropy-viscosity stabilization, and node-split handling of
+              capillary discontinuities at facies interfaces.
+            </p>
+            <p class="tags">C++ · Cython · Python · Finite elements</p>
+            <a class="card-link" href="https://github.com/abarua-ce" target="_blank" rel="noopener">Code &rarr;</a>
+          </article>
+          <article class="card project">
+            <h3>FluidFlower benchmark validation</h3>
+            <p>
+              Reproduction of the FluidFlower international CO<sub>2</sub>-storage
+              benchmark, quantifying free-gas and dissolved-CO<sub>2</sub> dynamics
+              against the reported experimental envelope.
+            </p>
+            <p class="tags">Multiphase flow · Benchmarking</p>
+            <!-- TODO: point to a repo, report, or writeup -->
+            <a class="card-link" href="#" target="_blank" rel="noopener">Details &rarr;</a>
+          </article>
+          <article class="card project">
+            <h3>Analytical verification suite</h3>
+            <p>
+              McWhorter–Sunada and hydrostatic verification cases establishing
+              convergence order and mass conservation for the compositional kernel.
+            </p>
+            <p class="tags">Verification · Convergence analysis</p>
+            <a class="card-link" href="#" target="_blank" rel="noopener">Details &rarr;</a>
+          </article>
+          <article class="card project">
+            <h3>Regional-scale CO<sub>2</sub> storage</h3>
+            <p>
+              Cross-sectional simulations of injection into layered geologic units,
+              exploring trapping, sealing, and containment at the storage-site scale.
+            </p>
+            <p class="tags">Reservoir modeling · GCS</p>
+            <a class="card-link" href="#" target="_blank" rel="noopener">Details &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section wrap contact">
+      <h2>Get in touch</h2>
+      <p class="section-lede">
+        I'm happy to talk about carbon storage, numerical methods, or collaboration.
+      </p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:abarua4@lsu.edu">
+          <span class="ck">Email</span>
+          <span class="cv">abarua4@lsu.edu</span>
+        </a>
+        <a class="contact-card" href="https://github.com/abarua-ce" target="_blank" rel="noopener">
+          <span class="ck">GitHub</span>
+          <span class="cv">@abarua-ce</span>
+        </a>
+        <!-- TODO: replace # with your LinkedIn URL -->
+        <a class="contact-card" href="#" target="_blank" rel="noopener">
+          <span class="ck">LinkedIn</span>
+          <span class="cv">in/arnob-barua</span>
+        </a>
+        <!-- TODO: replace # with your Google Scholar URL -->
+        <a class="contact-card" href="#" target="_blank" rel="noopener">
+          <span class="ck">Scholar</span>
+          <span class="cv">Publications</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="year">2025</span> Arnob Barua</span>
+      <span>Louisiana State University · Baton Rouge, LA</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Smooth-scroll active nav highlight
+    const links = [...document.querySelectorAll('.site-nav nav a')];
+    const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        const a = map.get(e.target.id);
+        if (a && e.isIntersecting) {
+          links.forEach(l => l.classList.remove('active'));
+          a.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('section[id]').forEach(s => obs.observe(s));
+  </script>
+</body>
+</html>
